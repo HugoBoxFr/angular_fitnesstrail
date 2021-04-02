@@ -1,0 +1,40 @@
+<div class="screen-map">  
+    <div class="container map-display">
+        <div class="row timer">
+            <div class="col s12 timer-display">
+                <i class="material-icons">hourglass_empty</i>
+                <p>00:00</p>
+            </div>
+        </div>  
+
+        <div class="row map-tab">
+            <div class="col s12 m6 map">
+                <app-map></app-map>
+            </div>
+
+            <div class="col s12 m6 info">
+                <div class="checkpoints">
+                    <ul>
+                        <app-step *ngFor="let step of stepList" [step]="step"></app-step>
+                    </ul>
+
+                    <div class="progress-container">
+                        <div *ngIf="loading" class="progress">
+                            <div class="indeterminate"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="validation">
+                    <p>
+                        {{ description.header }}
+                        <br>{{ description.content }}
+                        <br>{{ description.footer }}
+                    </p>
+    
+                    <button (click)="verifyStep()" class="waves-effect waves-light btn btn-validation toto">Vérifier<i class="material-icons right">where_to_vote</i></button>
+                </div>    
+            </div>  
+        </div>
+    </div>
+</div>

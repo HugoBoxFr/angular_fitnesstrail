@@ -1,0 +1,11 @@
+<agm-map [zoom]="15" [latitude]="coords.lat" [longitude]="coords.lon">
+    <agm-marker [latitude]="coords.lat" [longitude]="coords.lon">
+    </agm-marker>
+</agm-map>
+
+
+<div class="loader-container">
+    <div *ngIf="loader" class="progress">
+        <div class="indeterminate"></div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="row">
+    <img class="responsive-img col s12 m6 l4 offset-m3 offset-l4 logo" src="assets/img/logo/ft-lg2f.png" alt="Fitness Trail logo"/>
+
+    <form class="input-field col s8 m6 l4 offset-s2 offset-m3 offset-l4 userForm" (ngSubmit)="onSubmit(name.value)">
+        <label for="Name">Bonjour ! Entrez votre nom.</label>
+        <input id="Name" type="text" class="validate" #name (keyup)="inputUserName(name.value)">
+
+        <div *ngIf="userName && userName.length < 4" class="errMsg">{{ errorMessage }}</div>
+
+        <button class="btn waves-effect waves-light waves-orange orange darken-1 col s6 m4 l4 offset-s3 offset-m4 offset-l4" [disabled]="userName.length < 4" >
+            <i class="material-icons right">send</i>Go
+        </button>
+    </form>
+</div>

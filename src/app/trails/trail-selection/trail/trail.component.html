@@ -1,0 +1,6 @@
+<a [class]="trailSettings.matClass + ' waves-effect waves-light lighten-1 btn col s6 m4 l4 offset-s3 offset-m4 offset-l4 buttonparcours modal-trigger'" [href]="'#'+ trailSettings.modalLink">
+    <i class="material-icons right">{{ trailSettings.trailIcons }}</i>
+    Parcours
+</a>
+
+<app-trail-preview [trail]="trail" [id]="trailSettings.modalLink" class="modal"></app-trail-preview>

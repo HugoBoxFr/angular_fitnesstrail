@@ -1,0 +1,120 @@
+.screen-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map-display {
+    border-bottom: 2px solid #1e88e5;
+}
+
+.timer {
+    .timer-display {
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-bottom: 2px solid #1e88e5;
+
+        i {
+            margin-right: 5px;
+            animation: 2s infinite infinite-spinning ;
+            z-index: -1;
+        }
+    }
+}
+
+@keyframes infinite-spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+// .map {   
+//     overflow: hidden;
+
+//     .display-map {
+//         height: 400px;
+//     }
+// }
+
+.info {
+    text-align: center;
+
+    .checkpoints {
+        margin-bottom: 2vh;
+
+        ul {
+            padding-inline-start: 0;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+
+            li {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid lightgray;
+                overflow: hidden;
+            }
+        }
+
+        .progress-container {
+            position: relative;
+
+            .progress {
+                position: absolute;
+            }
+        }
+
+        // .step {
+        //     width: 100%;
+        //     height: 100%;
+        //     border-radius: 50%;
+        //     border: 1px solid white;
+        //     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
+        //     background: rgb(206,220,231); /* Old browsers */
+        //     background: -moz-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6-15 */
+        //     background: -webkit-linear-gradient(-45deg, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        //     background: linear-gradient(135deg, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        //     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+    
+        // .step-checked {
+        //     background: rgb(178,255,89); /* Old browsers */
+        //     background: -moz-linear-gradient(-45deg, rgba(178,255,89,1) 0%, rgba(95,219,78,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6-15 */
+        //     background: -webkit-linear-gradient(-45deg, rgba(178,255,89,1) 0%,rgba(95,219,78,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        //     background: linear-gradient(135deg, rgba(178,255,89,1) 0%,rgba(95,219,78,1) 44%,rgba(57,130,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        //     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2ff59', endColorstr='#398235',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        // }
+    
+        // .step-checked:before {
+        //     font-family: "Material Icons";
+        //     content: "\e5ca";
+        //     color: white;
+        //     font-size: 1.5em;
+        // }
+    }
+
+    .validation {
+        p {
+            margin-bottom: 2vh;
+        }
+    }
+}
+
+// mediaqueries
+@media screen and (max-width: 600px) {
+    .map {
+        margin-bottom: 3vh;
+    }
+}
+
+@media screen and (min-width: 600px) {
+}

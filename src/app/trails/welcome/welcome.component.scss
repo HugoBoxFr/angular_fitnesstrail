@@ -1,0 +1,31 @@
+.logo {
+    margin-top: 6em;
+}
+
+.btn {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.errMsg {
+    color: red;
+    font-size: 9px;
+    height: 20px;
+}
+
+.userForm {
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    border-radius: 5px;
+
+    label {
+        color: black;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    // .btn[disabled] {
+    //     background-color: rgba($color: #fdb55d, $alpha: .8)  !important;
+    // }
+}

@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~materialize-css/dist/css/materialize.css';
+@import '~material-design-icons/iconfont/material-icons.css';
+
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    height: 100vh;
+}
+
+.bg {
+    // The image used
+    background-image: url("assets/img/background/Background2.jpg");
+  
+    // Centering and scaling Background image
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    // alternative color or gradient if image load fails
+    background-color :#c3e59b;
+    height: 100vh;
+        // background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+}
+
+.btn-validation {
+    width: 60%;
+    height: 50px;
+    border: 2px solid rgb(178,255,89);
+    border-radius: 25px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b2ff59+0,5fdb4e+44,398235+100 */
+    background: rgb(178,255,89); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(178,255,89,1) 0%, rgba(95,219,78,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(178,255,89,1) 0%,rgba(95,219,78,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(178,255,89,1) 0%,rgba(95,219,78,1) 44%,rgba(57,130,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2ff59', endColorstr='#398235',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: inset 0 0 0 2px white;
+
+    i {
+        margin-left: 0;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -1,0 +1,9 @@
+<div class="modal-content">
+    <h4>Voici l'apercu du parcours {{ trail.id }}</h4>
+    <p>Ce parcours est de difficulté {{ trail.difficulty }}...</p>
+    <p>{{ trail.description }}</p>
+</div>
+
+<div class="modal-footer">
+    <a class="modal-close waves-effect waves-green btn-flat" (click)="displayActiveTrail()">Validez pour commencer</a>
+</div>
